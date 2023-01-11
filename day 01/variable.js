@@ -23,3 +23,21 @@ let Assigned_2 = 2;
 let Assigned_3 = true;
 let Assigned_4 = `this is the fourth assigned variable`
 
+let firstName = "emery";
+let lastName = "edem";
+let isSingle = true;
+let country = "nigeria";
+let age = 22;
+
+console.log(firstName);
+console.log(lastName);
+console.log(isSingle);
+console.log(country);
+console.log(age);
+
+let firstname = "emery", lastname="edem", is_single=true, country_name="nigeria", new_age = 22;
+
+const myAge = 22;
+const yourAge = 28;
+
+console.log(`I am ${myAge} years old. You are ${yourAge} years old.`);
