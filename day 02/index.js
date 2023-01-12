@@ -44,5 +44,5 @@ console.log(roundFig === 10);
 
 let newword = "python, jargon";
 
-console.log(newword.c)
+console.log(newword.substring("on"));
 
