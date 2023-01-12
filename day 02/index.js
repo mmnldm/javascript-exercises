@@ -49,5 +49,14 @@ console.log(newword.includes("on"));
 let phrase = "I hope this course is not full of jargon. Check if jargon is in the sentence.";
 console.log(phrase.includes("jargon"));
 
-let randomNumber = Math.floor(Math.random() * 100);
+let randomNumber = Math.floor(Math.random() * 101);
 console.log(randomNumber);
+
+
+let randomNum = Math.floor(Math.random() * 51 + 50);
+console.log(randomNum);
+
+let myString = 'JavaScript';
+let randomIndex = Math.floor(Math.random() * myString.length);
+let randomChar = myString[randomIndex];
+console.log(randomChar);
