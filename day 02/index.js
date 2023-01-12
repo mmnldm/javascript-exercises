@@ -44,5 +44,8 @@ console.log(roundFig === 10);
 
 let newword = "python, jargon";
 
-console.log(newword.substring("on"));
+console.log(newword.includes("on"));
+
+let phrase = "I hope this course is not full of jargon. Check if jargon is in the sentence.";
+console.log(phrase.includes("jargon"));
 
