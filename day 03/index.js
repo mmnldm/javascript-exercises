@@ -20,3 +20,12 @@ console.log('10' === 10);
 
 //3. 
 console.log(parseInt('9.8') === 10);
+
+//4. 
+let truthy = 3 - 6;
+console.log(truthy);
+let truthy1 = -3 - 6;
+console.log(truthy);
+let truthy3 = 3 + 6.9;
+console.log(truthy3);
+
