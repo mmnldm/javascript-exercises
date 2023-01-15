@@ -56,9 +56,19 @@ console.log(newday.getTime());
 // let area = 0.5 * parseInt(base) * parseInt(height);
 // console.log(area);
 
-const sidea = prompt("Side a: ");
-const sideb = prompt("Side b: ");
-const sidec = prompt("Side c: ");
+// const sidea = prompt("Side a: ");
+// const sideb = prompt("Side b: ");
+// const sidec = prompt("Side c: ");
 
-let triangle = parseInt(sidea) + parseInt(sideb) + parseInt(sidec);
-console.log(`The perimeter of the triangle is ${triangle}`);
+// let triangle = parseInt(sidea) + parseInt(sideb) + parseInt(sidec);
+// console.log(`The perimeter of the triangle is ${triangle}`);
+
+//9
+
+let hours = prompt("Enter hours: ");
+let rate = prompt("Enter rate per hour: ");
+let earning = parseInt(hours) * parseInt(rate);
+
+let weeklyPay = alert(`Your weekly earning is ${earning}.`)
+
+
