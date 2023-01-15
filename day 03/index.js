@@ -17,3 +17,6 @@ console.log(typeof(year));
 
 //2.
 console.log('10' === 10);
+
+//3. 
+console.log(parseInt('9.8') === 10);
