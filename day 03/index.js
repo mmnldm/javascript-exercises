@@ -14,3 +14,6 @@ console.log(typeof(city));
 console.log(typeof(age));
 console.log(typeof(isMarried));
 console.log(typeof(year));
+
+//2.
+console.log('10' === 10);
