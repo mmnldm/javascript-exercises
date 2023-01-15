@@ -46,3 +46,12 @@ console.log(newday.getHours());
 console.log(newday.getMinutes());
 console.log(newday.getMinutes());
 console.log(newday.getTime());
+
+/* Exercise 2 
+1*/
+
+const base = prompt("Enter base");
+const height = prompt("Enter height");
+
+let area = 0.5 * parseInt(base) * parseInt(height);
+console.log(area);
