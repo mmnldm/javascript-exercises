@@ -35,3 +35,14 @@ let second = "jargon";
 
 let compare = first.length != second.length;
 console.log(compare);
+
+//6. 
+const newday = new Date;
+console.log(newday.getFullYear());
+console.log(newday.getMonth() + 1);
+console.log(newday.getDate());
+console.log(newday.getDay());
+console.log(newday.getHours());
+console.log(newday.getMinutes());
+console.log(newday.getMinutes());
+console.log(newday.getTime());
