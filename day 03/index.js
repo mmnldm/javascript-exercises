@@ -29,3 +29,9 @@ console.log(truthy);
 let truthy3 = 3 + 6.9;
 console.log(truthy3);
 
+//5. 
+let first = "python";
+let second = "jargon"; 
+
+let compare = first.length != second.length;
+console.log(compare);
