@@ -65,10 +65,31 @@ console.log(newday.getTime());
 
 //9
 
-let hours = prompt("Enter hours: ");
-let rate = prompt("Enter rate per hour: ");
-let earning = parseInt(hours) * parseInt(rate);
+// let hours = prompt("Enter hours: ");
+// let rate = prompt("Enter rate per hour: ");
+// let earning = parseInt(hours) * parseInt(rate);
 
-let weeklyPay = alert(`Your weekly earning is ${earning}.`)
+// let weeklyPay = alert(`Your weekly earning is ${earning}.`)
+
+//12
+
+let firstname = 'emery';
+let lastname = 'edem'; 
+
+let nameLength = (firstname.length > lastname.length) ? console.log(`Your first name ${firstname} is longer than your family name, ${lastname}`) : console.log(`Your first name ${firstname} is not longer than your family name, ${lastname}`);
+
+console.log(nameLength);
+
+//13
+
+let driveAge = prompt('What year were you born: ');
+driveYear = newday.getFullYear();
+
+let eligible = driveYear - parseInt(driveAge);
+let notEligible = 18 - eligible; 
+
+let driveMessage = (eligible >= 18) ? console.log(`You are ${eligible}. You are old enough to drive`) : console.log(`You are ${eligible}. You will be allowed to drive in ${notEligible}`);
+console.log(driveMessage);
+
 
 
