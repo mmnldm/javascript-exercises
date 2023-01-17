@@ -82,14 +82,23 @@ console.log(nameLength);
 
 //13
 
-let driveAge = prompt('What year were you born: ');
-driveYear = newday.getFullYear();
+// let driveAge = prompt('What year were you born: ');
+// driveYear = newday.getFullYear();
 
-let eligible = driveYear - parseInt(driveAge);
-let notEligible = 18 - eligible; 
+// let eligible = driveYear - parseInt(driveAge);
+// let notEligible = 18 - eligible; 
 
-let driveMessage = (eligible >= 18) ? console.log(`You are ${eligible}. You are old enough to drive`) : console.log(`You are ${eligible}. You will be allowed to drive in ${notEligible}`);
-console.log(driveMessage);
+// let driveMessage = (eligible >= 18) ? console.log(`You are ${eligible}. You are old enough to drive`) : console.log(`You are ${eligible}. You will be allowed to drive in ${notEligible}`);
+// console.log(driveMessage);
 
+//14 
 
-
+//15 
+const nows = new Date()
+const years = nows.getFullYear();
+const months = nows.getMonth() + 1;
+const date = nows.getDate();
+const hours = nows.getHours();
+const minutes = nows.getHours();
+const seconds = nows.getHours();
+console.log(`${years}/${months}/${date} ${hours}:${minutes}:${seconds}`) 
