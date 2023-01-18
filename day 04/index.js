@@ -9,13 +9,30 @@
 // };
 
 // 2
+// const myAge = 22;
+// let yourAge = prompt('Enter your age: ');
 
-const myAge = 22;
-let yourAge = prompt('Enter your age: ');
+// if (myAge >= yourAge){
+// console.log('I am older than you');
+// }
+// else{
+//     console.log(`You are ${parseInt(yourAge) - myAge } years older than me` );
+// };
 
-if (myAge >= yourAge){
-console.log('I am older than you');
+// //3 
+let a = 4;
+let b = 3; 
+
+if (a > b){
+    console.log(`${a} is greater than ${b}`);
 }
 else{
-    console.log(`You are ${parseInt(yourAge) - myAge } years older than me` );
-};
+    console.log(`${b} is less than ${a}`);
+}
+
+
+//4
+let random = prompt("Enter a number: ");
+
+if (parseInt(random))
+
