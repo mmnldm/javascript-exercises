@@ -32,7 +32,14 @@ else{
 
 
 //4
-let random = prompt("Enter a number: ");
+let newnum = prompt('Enter a number:');
+let evenConv = parseInt(newnum);
 
-if (parseInt(random))
-
+if (newnum % 2 == 0)
+{
+console.log(`${newnum} is an even number`)
+}
+else 
+{
+ console.log(`${newnum} is an odd number`)
+};
