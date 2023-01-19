@@ -32,14 +32,38 @@ else{
 
 
 //4
-let newnum = prompt('Enter a number:');
-let evenConv = parseInt(newnum);
+// // let newnum = prompt('Enter a number:');
+// // let evenConv = parseInt(newnum);
 
-if (newnum % 2 == 0)
-{
-console.log(`${newnum} is an even number`)
-}
-else 
-{
- console.log(`${newnum} is an odd number`)
+// if (newnum % 2 == 0)
+// {
+// console.log(`${newnum} is an even number`)
+// }
+// else 
+// {
+//  console.log(`${newnum} is an odd number`)
+// };
+
+//Exercise 2 
+let students = prompt("Input your score:");
+let studentScore = parseInt(students);
+
+switch (true){
+    case studentScore <= 49:
+    console.log("You got an F")
+    break
+    case studentScore == 50 || studentScore <= 59:
+    console.log("You got an D")
+    break
+    case studentScore == 60 || studentScore <= 69:
+    console.log("You got an C")
+    break
+    case studentScore == 70 || studentScore <= 89:
+    console.log("You got an B")
+    break
+    case studentScore == 90 || studentScore <= 100:
+    console.log("Congrats! You got an A!")
+    break
+    default:
+        console.log("Wrong input")
 };
