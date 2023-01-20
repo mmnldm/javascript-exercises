@@ -45,25 +45,54 @@ else{
 // };
 
 //Exercise 2 
-let students = prompt("Input your score:");
-let studentScore = parseInt(students);
+// let students = prompt("Input your score:");
+// let studentScore = parseInt(students);
 
-switch (true){
-    case studentScore <= 49:
-    console.log("You got an F")
-    break
-    case studentScore == 50 || studentScore <= 59:
-    console.log("You got an D")
-    break
-    case studentScore == 60 || studentScore <= 69:
-    console.log("You got an C")
-    break
-    case studentScore == 70 || studentScore <= 89:
-    console.log("You got an B")
-    break
-    case studentScore == 90 || studentScore <= 100:
-    console.log("Congrats! You got an A!")
-    break
+// switch (true){
+//     case studentScore <= 49:
+//     console.log("You got an F")
+//     break
+//     case studentScore == 50 || studentScore <= 59:
+//     console.log("You got an D")
+//     break
+//     case studentScore == 60 || studentScore <= 69:
+//     console.log("You got an C")
+//     break
+//     case studentScore == 70 || studentScore <= 89:
+//     console.log("You got an B")
+//     break
+//     case studentScore == 90 || studentScore <= 100:
+//     console.log("Congrats! You got an A!")
+//     break
+//     default:
+//         console.log("Wrong input")
+// };
+
+//2 
+let seasons = prompt("What month is this: ");
+
+
+switch(true){
+    case seasons == "September":
+    case seasons == "October":
+    case seasons == "November":
+        console.log("The season is Autumn")
+        break
+    case seasons == "December":
+    case seasons == "January":
+    case seasons == "February":
+        console.log("The season is Winter")
+        break
+    case seasons == "March":
+    case seasons == "April":
+    case seasons == "May":
+        console.log("The season is Spring")
+        break
+    case seasons == "June":
+    case seasons == "July":
+    case seasons == "August":
+        console.log("The season is Summer")
+        break
     default:
-        console.log("Wrong input")
-};
+        console.log("Start the first letter with Capslock on / Not Numbers")
+}
