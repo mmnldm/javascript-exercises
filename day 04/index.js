@@ -69,30 +69,61 @@ else{
 // };
 
 //2 
-let seasons = prompt("What month is this: ");
+// let seasons = prompt("What month is this: ");
 
+
+// switch(true){
+//     case seasons == "September":
+//     case seasons == "October":
+//     case seasons == "November":
+//         console.log("The season is Autumn")
+//         break
+//     case seasons == "December":
+//     case seasons == "January":
+//     case seasons == "February":
+//         console.log("The season is Winter")
+//         break
+//     case seasons == "March":
+//     case seasons == "April":
+//     case seasons == "May":
+//         console.log("The season is Spring")
+//         break
+//     case seasons == "June":
+//     case seasons == "July":
+//     case seasons == "August":
+//         console.log("The season is Summer")
+//         break
+//     default:
+//         console.log("Start the first letter with Capslock on / Not Numbers")
+// }
+
+let days = prompt("What is today?")
+let newDays = /days/i;
+
+console.log(newDays);
 
 switch(true){
-    case seasons == "September":
-    case seasons == "October":
-    case seasons == "November":
-        console.log("The season is Autumn")
-        break
-    case seasons == "December":
-    case seasons == "January":
-    case seasons == "February":
-        console.log("The season is Winter")
-        break
-    case seasons == "March":
-    case seasons == "April":
-    case seasons == "May":
-        console.log("The season is Spring")
-        break
-    case seasons == "June":
-    case seasons == "July":
-    case seasons == "August":
-        console.log("The season is Summer")
-        break
+    case newDays == "Saturday":
+    console.log("Saturday is a weekend")
+    break
+    case newDays == "Friday":
+    console.log("Friday is a weekend")
+    break
+    case newDays == "Thursday":
+    console.log("Thursday is a weekday")
+    break
+    case newDays == "Wednesday":
+    console.log("Wednesday is a weekday")
+    break
+    case newDays == "Tueday":
+    console.log("Tuesday is a weekday")
+    break
+    case newDays == "Monday":
+    console.log("Monday is a weekday")
+    break
+    case newDays === "Sunday":
+    console.log("Sunday is a weekday")
+    break
     default:
-        console.log("Start the first letter with Capslock on / Not Numbers")
+        console.log("Wrong input");
 }
