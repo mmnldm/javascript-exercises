@@ -31,4 +31,23 @@ console.log(itCompanies[2].toUpperCase());
 console.log(itCompanies[3].toUpperCase());
 console.log(itCompanies[4].toUpperCase());
 console.log(`${itCompanies} are big IT COmpanies`);
+itCompanies.sort();
+itCompanies.reverse();
+console.log(itCompanies);
+
+//string to number conversion
+
+let sum = '123';
+let calc = Number(sum) + 3;
+
+console.log(calc);
+
+//number to string conversion 
+let num = 123;
+let str = String(num);
+
+console.log(typeof str);
+
+//remainder operator
+
 
