@@ -38,3 +38,8 @@ else if(inp < 0){
 else{
     alert(0)
 }
+
+//rewrite if into ? tenary operator
+
+let result = ( a + b < 4) ? 'Below' : 'Over';
+
