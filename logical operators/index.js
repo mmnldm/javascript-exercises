@@ -49,3 +49,37 @@ if (!(age >= 14 && age <= 90)){
     console.log(age);
 }
 
+// 
+let Username = prompt("Login", "");
+
+if (Username === "Admin") {
+  let pass = prompt("Password");
+
+  if (pass === "TheMaster") {
+    alert("Welcome");
+  } else if (pass === "" || pass == null) {
+    alert("Canceled");
+  } else {
+    alert("Wrong password");
+  }
+} else if (Username === "" || Username === null) {
+  alert("Cancelled");
+} else {
+  alert("I don't know you");
+}
+
+// 
+
+let quest = prompt("Do you have money in wallet?", '');
+
+if (quest === "Yes" || quest === 'yes'){
+    let shop = prompt("Is brand of pen available?", '')
+
+    if(shop === 'yes' || shop === "Yes"){
+        alert("Take the pen")
+    }
+} else if (quest === "No" || quest === "no"){
+    alert("Put money in wallet");
+} else{
+    alert("What you doing?")
+}
