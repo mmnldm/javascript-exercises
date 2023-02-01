@@ -22,3 +22,19 @@ while (i <= 100) {
   i++;
 }
 console.log(sum);
+
+
+let password; 
+
+do{
+    password = prompt('Input password:');
+}
+while(password !== 'password');
+
+if (password === password){
+    alert('Welcome');
+} else {
+    alert("try again");
+}
+
+
