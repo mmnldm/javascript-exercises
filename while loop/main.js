@@ -24,17 +24,49 @@ while (i <= 100) {
 console.log(sum);
 
 
-let password; 
+// let password; 
 
-do{
-    password = prompt('Input password:');
+// do{
+//     password = prompt('Input password:');
+// }
+// while(password !== 'password');
+
+// if (password === password){
+//     alert('Welcome');
+// } else {
+//     alert("try again");
+// }
+
+/*
+while loop exercise
+*/
+
+let rando = 3;
+
+while(rando){   
+    alert(rando--);
 }
-while(password !== 'password');
 
-if (password === password){
-    alert('Welcome');
-} else {
-    alert("try again");
+for (let evenNumero = 0; evenNumero <= 10; evenNumero++){
+    //this check if the variable is an even number and outputs the result
+    if (evenNumero % 2 == 0){
+        console.log(evenNumero)
+    }
 }
 
+let numero = 0;
+
+while(numero < 3){
+    console.log(`number ${numero}!`)
+    numero++;
+}
+
+do {
+    greater = prompt("Enter a number greater than 100:", '');
+} 
+while(greater <= 100 && greater);
+
+if (greater > 100){
+    console.log("LFG");
+}
 
