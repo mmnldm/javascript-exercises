@@ -216,3 +216,10 @@ return volume;
     return circ;
  }
  circOfCirc(12);
+
+ function density(mass, volume){
+    let density = mass / volume;
+    console.log(density);
+    return density;
+ }
+ density(122, 120);
