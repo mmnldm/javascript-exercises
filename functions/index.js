@@ -152,3 +152,67 @@ let fruits = ['apple', 'mango', 'pineapple', 'guava']
 for(let i = 0; i < fruits.length; i++){
     log(fruits[i]);
 }
+
+function sumAllSums(){
+    let sum = 0;
+    for(let i = 0; i < arguments.length; i++){
+        sum += arguments[i];
+    }
+    return sum;
+}
+
+log(sumAllSums(1,2,3,4,5));
+
+// * answering js task 
+ function myFullName(myFirstname, myLastName){
+    return (`My full name is ${myFirstname} ${myLastName}`);
+ }
+ log(myFullName('Emery','Edem'));
+
+ function addNumbers(numero1, numero2){
+        return sum = numero1 + numero2;
+ }
+ log(addNumbers(2000,23));
+
+ function areaOfRectangle(length, width){
+    let area = length * width;
+    console.log(`The area of the rectangle is ${area}`);
+    return area;
+    
+ }
+ areaOfRectangle(20, 40);
+
+ function perimeterOfRectange (length,width){
+    let perimeter = 2 * (length * width);
+    console.log(`The perimeter of the rectangle is ${perimeter}`);
+    return perimeter;
+ }
+ perimeterOfRectange(10,20);
+
+
+ function volumeRectPrism(){
+let length = prompt('Input length:', 0);
+let width = prompt('Input width:', 0);
+let height = prompt('Insert height', 0);
+
+let volume = (Number(length) * Number(width) * Number(height));
+console.log(`The volume is ${volume}`);
+return volume;
+
+ }
+ volumeRectPrism();
+
+ function areaOfCircle(radius){
+    const pi = Math.PI;
+    let area = pi * radius * radius;
+    console.log(`The area of circle with ${radius} is ${area}`);
+    return area;
+ }
+ areaOfCircle(20);
+
+ function circOfCirc(r){
+    let circ = 2 * Math.PI * r;
+    log(`The circ of circle with ${r} is ${circ}`);
+    return circ;
+ }
+ circOfCirc(12);
