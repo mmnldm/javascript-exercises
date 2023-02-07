@@ -241,3 +241,25 @@ convertCelsiusToFahrenheit(-49);
 
  //*  bmi = weight in Kg / (height x height) in m2
  
+ function BMI(){
+    let getUserWeight = prompt("What is your weight: ", 'kg');
+    let getUserHeight = prompt("What is your Height: ", 'ft');
+    
+    let bmi = parseFloat(getUserWeight) / (getUserHeight * getUserHeight);
+    
+    if(bmi < 18.5){
+        alert(`You are underweight`);
+    } else if (bmi === 18.5 || bmi <= 24.9 ){
+        alert(`You have a normal weight`);
+    } else if(bmi === 18.5 || bmi <= 29.9 ){
+        alert(`You are Overweight`);
+    } else if(bmi >= 30 ){
+        alert(`You are obese and you need to see a doctor`);
+    }
+    else{
+        alert(`Incorrect input`);
+    }
+    return bmi;
+ }
+ 
+ BMI();
