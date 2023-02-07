@@ -223,3 +223,21 @@ return volume;
     return density;
  }
  density(122, 120);
+
+ function speed(distance,time){
+    let totalDistance = distance / time;
+    console.log(`The speed is ${totalDistance}`);
+    return totalDistance;
+ }
+ speed(100,12);
+
+ function convertCelsiusToFahrenheit(oC){
+    let oF = (oC * 9 /5) + 32;
+    console.log(`${oC} C is converted to ${oF} F`)
+    return oF;
+ }
+convertCelsiusToFahrenheit(-49);
+
+
+ //*  bmi = weight in Kg / (height x height) in m2
+ 
