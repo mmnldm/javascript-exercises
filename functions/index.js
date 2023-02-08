@@ -306,8 +306,10 @@ convertCelsiusToFahrenheit(-49);
 //  showDateTime();
 
 function swapValues(x, y) {
-    [x, y] = [y, x];
-    return [x, y];
+    
+    [x,y] = [y,x];
+    log(`x = ${x}, y = ${y}`);
   }
-  let values = swapValues(2,4);
-  log(values);
+swapValues(3,4);
+ 
+
