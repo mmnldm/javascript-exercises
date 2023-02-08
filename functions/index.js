@@ -311,5 +311,24 @@ function swapValues(x, y) {
     log(`x = ${x}, y = ${y}`);
   }
 swapValues(3,4);
- 
+
+function min (a,b){
+    if (a < b){
+        return a;
+    } else{
+        return b;
+    }
+}
+log(min(3,100));
+
+// * my solution 
+function pow(x,n){
+    let xx = prompt("Enter x:", 0);
+    let nn = prompt("Enter n:", 0);
+
+    let calc = Math.pow(xx,nn);
+    alert(calc);
+    return calc;
+}
+ pow();
 
