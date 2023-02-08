@@ -190,17 +190,17 @@ log(sumAllSums(1,2,3,4,5));
  perimeterOfRectange(10,20);
 
 
- function volumeRectPrism(){
-let length = prompt('Input length:', 0);
-let width = prompt('Input width:', 0);
-let height = prompt('Insert height', 0);
+//  function volumeRectPrism(){
+// let length = prompt('Input length:', 0);
+// let width = prompt('Input width:', 0);
+// let height = prompt('Insert height', 0);
 
-let volume = (Number(length) * Number(width) * Number(height));
-console.log(`The volume is ${volume}`);
-return volume;
+// let volume = (Number(length) * Number(width) * Number(height));
+// console.log(`The volume is ${volume}`);
+// return volume;
 
- }
- volumeRectPrism();
+//  }
+//  volumeRectPrism();
 
  function areaOfCircle(radius){
     const pi = Math.PI;
@@ -241,25 +241,73 @@ convertCelsiusToFahrenheit(-49);
 
  //*  bmi = weight in Kg / (height x height) in m2
  
- function BMI(){
-    let getUserWeight = prompt("What is your weight: ", 'kg');
-    let getUserHeight = prompt("What is your Height: ", 'ft');
+//  function BMI(){
+//     let getUserWeight = prompt("What is your weight: ", 'kg');
+//     let getUserHeight = prompt("What is your Height: ", 'ft');
     
-    let bmi = parseFloat(getUserWeight) / (getUserHeight * getUserHeight);
+//     let bmi = parseFloat(getUserWeight) / (getUserHeight * getUserHeight);
     
-    if(bmi < 18.5){
-        alert(`You are underweight`);
-    } else if (bmi === 18.5 || bmi <= 24.9 ){
-        alert(`You have a normal weight`);
-    } else if(bmi === 18.5 || bmi <= 29.9 ){
-        alert(`You are Overweight`);
-    } else if(bmi >= 30 ){
-        alert(`You are obese and you need to see a doctor`);
+//     if(bmi < 18.5){
+//         alert(`You are underweight`);
+//     } else if (bmi === 18.5 || bmi <= 24.9 ){
+//         alert(`You have a normal weight`);
+//     } else if(bmi === 18.5 || bmi <= 29.9 ){
+//         alert(`You are Overweight`);
+//     } else if(bmi >= 30 ){
+//         alert(`You are obese and you need to see a doctor`);
+//     }
+//     else{
+//         alert(`Incorrect input`);
+//     }
+//     return bmi;
+//  }
+ 
+//  BMI();
+
+ let findMax = function (a,b,c){
+    let max = a;
+    if(b > max){
+        max=b;
     }
-    else{
-        alert(`Incorrect input`);
+    if(c > max){
+        max=c;
     }
-    return bmi;
+    return max;
+ }
+
+ const finalMax = findMax(1,23,3);
+ log(finalMax);
+
+ let newCode = function(){
+    return finalMax * 223;
  }
  
- BMI();
+ const newVibe = newCode();
+ log(newVibe);
+
+ let printArray = function(array){
+    for (let i = 0; i < array.length; i++){
+         log(array[i]);
+    }
+    return array;
+ }
+ let rays = ['Bad Bunny','Rosalia','Maluma'];
+ printArray(rays);
+
+//  let showDateTime = function (){
+//     const now = new Date();
+//     let years = log(`${now.getDay()}/${now.getMonth() + 1}/${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`);
+//     let times = log(``);
+
+//     let fullYEARS = years + times;
+//     return fullYEARS;
+//  }
+
+//  showDateTime();
+
+function swapValues(x, y) {
+    [x, y] = [y, x];
+    return [x, y];
+  }
+  let values = swapValues(2,4);
+  log(values);
