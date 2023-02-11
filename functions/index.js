@@ -359,4 +359,65 @@ function pow(x,n){
   let hailed = "Emery"
   greetMe(hailed);
 
+  let ask = function(question, yes, no){
+    if (confirm(question)) yes()
+    else no();
+  };
+
+  let showOk = function () {
+    alert("You confirmed");
+  };
+  let showCancel = function () {
+    alert("You canceled");
+  };
+
+  ask("Do you agree?", showOk, showCancel);
+
+
+
+  let command = function(assign, nod, bail){
+    if(confirm(assign)){
+        nod();
+    }else {
+        bail();
+    }
+  };
+
+  let realtalk = "Do you yield?";
+
+  function cap (){
+    alert("Yes");
+  }
+  function noCap(){
+    alert("Nah, LFG");
+  }
+
+  command(realtalk,cap, noCap);
+
+
+  function greeting (helloMessage, namees){
+    console.log(helloMessage() + namees);
+  }
+
+  function sayHello(){
+    return 'Hello';
+  }
+
+  greeting(sayHello, "Javascript");
+
+  // * Arrow functions 
+
+let summer = (a,b) => a + b ;
+ 
+log(summer(112,122));
+
+function ask(question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
+  }
   
+  ask(
+    "Do you agree?",
+    () => alert("You agreed."),
+    () => alert("You canceled the execution.")
+  );
