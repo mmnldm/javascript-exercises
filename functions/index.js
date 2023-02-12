@@ -411,13 +411,7 @@ let summer = (a,b) => a + b ;
  
 log(summer(112,122));
 
-function ask(question, yes, no) {
-    if (confirm(question)) yes();
-    else no();
-  }
-  
-  ask(
-    "Do you agree?",
-    () => alert("You agreed."),
-    () => alert("You canceled the execution.")
-  );
+
+  let xnx = 0; 
+  let yxy = xnx++;
+  log(yxy);
