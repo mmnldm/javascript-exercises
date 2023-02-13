@@ -83,3 +83,10 @@ if (quest === "Yes" || quest === 'yes'){
 } else{
     alert("What you doing?")
 }
+
+// * OR operator
+let sth = '';
+let sthth = 0;
+let sthname = "Supercoder";
+
+alert(sth || sthth || sthname);
