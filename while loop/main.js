@@ -46,6 +46,12 @@ let rando = 3;
 while(rando){   
     alert(rando--);
 }
+// * while loop with an expression
+let newtester = 3;
+
+while(newtester > 0){   
+    alert(newtester--);
+}
 
 for (let evenNumero = 0; evenNumero <= 10; evenNumero++){
     //this check if the variable is an even number and outputs the result
