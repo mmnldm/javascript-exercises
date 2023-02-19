@@ -75,4 +75,28 @@ while(greater <= 100 && greater);
 if (greater > 100){
     console.log("LFG");
 }
+// * break statement
+let summer = 0; 
+
+while(true){
+    let value = +prompt("Enter number", 0);
+
+    if (!value) break;
+
+    summer += value;
+}
+
+console.log('Sum:' + summer);
+
+
+let newprog = 0;
+
+while(true){
+    let nprog = +prompt("Insert integer", 0);
+
+    if(nprog <= 0) break;
+
+    newprog += nprog; 
+}
+console.log(newprog);
 
