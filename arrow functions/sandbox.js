@@ -50,3 +50,18 @@ let ask = (question, yes, no) => {
     () =>  alert("You agreed.") ,
     () =>  alert("You canceled the execution.")
   );
+
+  function stringer(str){
+    if(!str){
+        return " "
+    }
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  }
+
+  log(stringer("dTolao bka"));
+
+  let lastLetter = (string) =>{
+    return string.charAt(string.length - 1);
+
+  }
+  log(lastLetter("Blues"));
