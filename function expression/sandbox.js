@@ -26,7 +26,7 @@ let sayHi = function(){
 
 sayHi();
 
-// * Main function asking question
+* Main function asking question
 let ask = function(question,yes,no){
     if(confirm(question)) yes()
     else no();
@@ -42,7 +42,7 @@ let showCancel = function(){
 
 ask("Do you agree?", showOk, showCancel);
 
-// * 2
+* 2
 function orderPizza(callback){
     setTimeout(()=> {
         const pizza = "🍕"
@@ -72,7 +72,7 @@ function drinkReady(soda){
 
 orderDrink(drinkReady);
 
-// * Example 3 
+* Example 3 
 
 let orderGlasses = function(off_white){
     setTimeout(() => {
@@ -88,4 +88,16 @@ let orderRecieved = function(off_white){
 orderGlasses(orderRecieved);
 
 // * I need to create a README for my learning codes
+// * FIZZBUZZ EXAMPLE BELOW
 
+// let codetest = +prompt("Enter an integer number?")
+
+// for(let i =1;i <= codetest; i++){
+    
+//     if(i % 3 === 0 && i % 5 === 0) console.log("FizzBuzz")
+//     else if(i % 3 === 0) console.log("Fizz")
+//     else if(i % 5 === 0) console.log("Buzz")
+//     else console.log(i);
+    
+
+// }
