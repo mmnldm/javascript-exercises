@@ -65,3 +65,6 @@ let ask = (question, yes, no) => {
 
   }
   log(lastLetter("Blues"));
+
+  let add7 = (number) => number * 7;
+  log(add7(2));
