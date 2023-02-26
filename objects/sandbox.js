@@ -39,9 +39,9 @@ let menu = {
     for (let key in menu) {
       if (typeof menu[key] == 'number') {
         menu[key] *= 2;
-        return menu;
       }
     }
   }
-console.log(multiplyNumeric(menu));
-console.log(multiplyNumeric(menu));
+  
+multiplyNumeric(menu);
+console.log(menu);
