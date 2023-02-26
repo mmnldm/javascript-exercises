@@ -42,6 +42,33 @@ let menu = {
       }
     }
   }
-  
+
 multiplyNumeric(menu);
 console.log(menu);
+
+// * Exercise 3
+
+let studentInfo = {
+    firstname: "Emery",
+    lastname: "Edem",
+    age: 22,
+    firstgrade: 10,
+    secondgrade: 20,
+    thirdgrade: 2000,
+}
+
+function getStudentInfo(studentInfo){
+
+    let fullname = `${studentInfo.firstname} ${studentInfo.lastname}`;
+    let age = `${studentInfo.age}`;
+    let grades = `[${studentInfo.firstgrade},${studentInfo.secondgrade}, ${studentInfo.thirdgrade}]`;
+
+    return{
+        fullname,
+        age,
+        grades,
+    }
+}
+
+let getter = getStudentInfo(studentInfo);
+console.log(getter);
