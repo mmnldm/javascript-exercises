@@ -122,3 +122,27 @@ let person = {
 
   let merger = mergeObjects(obj1,obj2);
   console.log(merger);
+
+  // * Final task for tonight 
+
+  let num_obj = {
+    a: 5,
+    b: 10,
+    c: "hello",
+    d: true,
+    e: 2.5
+  };
+
+  let sumValues = (num_obj) =>{
+    let sum = 0;
+
+    for(let props in num_obj){
+        if(typeof num_obj[props] == 'number'){
+            sum += num_obj[props];
+        }
+    }
+    return sum;
+  }
+
+  let again = sumValues(num_obj);
+  console.log(again);
