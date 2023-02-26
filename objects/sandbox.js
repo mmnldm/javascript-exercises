@@ -72,3 +72,53 @@ function getStudentInfo(studentInfo){
 
 let getter = getStudentInfo(studentInfo);
 console.log(getter);
+
+// * Exercise 
+
+let person = {
+    name: "John",
+    age: 20,
+    gender: "male"
+  };
+
+  function countProperties(person){
+    let count = 0;
+
+    for(let prop in person){
+       if(person.hasOwnProperty(prop)){
+        count++
+       }
+    }
+    return count;
+  }
+
+  let finalcount = countProperties(person)
+  console.log(finalcount);
+
+  // * Exercise 
+
+  let obj1 ={
+    name: "Amala",
+    gender: "female",
+  }
+
+  let obj2 ={
+    age: 31,
+    skin: "Dark",
+  }
+
+  function mergeObjects(obj1,obj2){
+    let results = {};
+
+    for(let prop in obj1){
+        results[prop] = obj1[prop];
+    };
+    for(let prop in obj2){
+        results[prop] = obj2[prop];
+    };
+
+   return results;
+  }
+
+  let merger = mergeObjects(obj1,obj2);
+  console.log(merger);
