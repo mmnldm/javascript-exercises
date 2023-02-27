@@ -146,3 +146,67 @@ let person = {
 
   let again = sumValues(num_obj);
   console.log(again);
+
+  // * Function 
+
+  let book = {
+    title: "The Courage to Be Disliked",
+    author: "Ichiro Kishimi",
+    pages: 288,
+    read: true,
+  }
+
+
+  function info(book){
+        if (book.read == true){
+            return `${book.title} by ${book.author}, ${book.pages} already read`;
+        } else{
+            return `${book.title} by ${book.author}, ${book.pages} not read yet`;
+        }
+  }
+
+  let finalread = info(book);
+  console.log(finalread);
+
+  // * Objects with arrays and a function 
+  
+  let profile = {
+    name: "Amada",
+    age: "20",
+    gender: "Female",
+    hobbies: ["Listening to music", "Juggling", "Smoking"],
+  }
+
+  let userinput = prompt("What is your name?");
+
+  let greet = (profile, userinput) => {
+    return `Hello ${userinput}, My name is ${profile.name}`;
+  }
+  console.log(greet(profile,userinput));
+
+  //* I will try this too 
+
+  let profile_2 = {
+    name: "Emery",
+    age: 22,
+    hobbies: ['Coding', 'Fashion'],
+  }
+
+  let greeting = (profile_2,) => {
+    let sayHello = `Hello, my name is ${profile_2.name}`;
+    return sayHello;
+  }
+
+  let birthday = (profile_2) =>{
+    profile_2.age++;
+
+    let hbd = `Happy birthday, ${profile_2.name}! You are now ${profile_2.age} years old.`
+    return hbd;
+  }
+
+  console.log(birthday(profile_2));
+  console.log(birthday(profile_2));
+  console.log(greeting(profile_2));
+
+  profile_2.hobbies.push("Reading");
+  console.log(profile_2.hobbies);
