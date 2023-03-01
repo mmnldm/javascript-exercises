@@ -170,19 +170,19 @@ let person = {
 
   // * Objects with arrays and a function 
   
-  let profile = {
-    name: "Amada",
-    age: "20",
-    gender: "Female",
-    hobbies: ["Listening to music", "Juggling", "Smoking"],
-  }
+  // let profile = {
+  //   name: "Amada",
+  //   age: "20",
+  //   gender: "Female",
+  //   hobbies: ["Listening to music", "Juggling", "Smoking"],
+  // }
 
-  let userinput = prompt("What is your name?");
+  // let userinput = prompt("What is your name?");
 
-  let greet = (profile, userinput) => {
-    return `Hello ${userinput}, My name is ${profile.name}`;
-  }
-  console.log(greet(profile,userinput));
+  // let greet = (profile, userinput) => {
+  //   return `Hello ${userinput}, My name is ${profile.name}`;
+  // }
+  // console.log(greet(profile,userinput));
 
   //* I will try this too 
 
@@ -210,3 +210,36 @@ let person = {
 
   profile_2.hobbies.push("Reading");
   console.log(profile_2.hobbies);
+
+
+let hours = 0;
+const intervalId = setInterval(() => {
+  hours++;
+  if (hours <= 8) {
+    console.log("New tweet");
+  } else {
+    clearInterval(intervalId);
+  }
+}, 60 * 60 * 1000);
+
+console.log(hours);
+
+
+// * Understanding Reference Values!
+
+
+let c = [1,2]; 
+
+function add(array, element){
+  return array.push(element);
+}
+
+add(c, 3);
+console.log(c);
+
+let d = [1,12,13,14];
+function addnum(arr,num){
+  return arr.push(num);
+}
+addnum(d,10);
+console.log(d);
